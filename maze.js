@@ -1,4 +1,4 @@
-const mazeSolver = function(maze){
+/*const mazeSolver = function(maze){
     if(maze[0].length === 1){
         if(maze[0][0].length === 1){
             return ''
@@ -12,6 +12,16 @@ const mazeSolver = function(maze){
             }
         }
     }
+}*/
+
+const mazeSolver2 = function(maze) {
+    pathFinder(0, 0, maze, [])
+}
+
+const pathFinder = function(x, y, maze, visited){
+    if(maze[x][y]==="e"){
+        
+    }
 }
 
 let mySmallMaze = [
@@ -19,3 +29,4 @@ let mySmallMaze = [
     [' ', '*', ' '],
     [' ', ' ', 'e']
 ]
+
